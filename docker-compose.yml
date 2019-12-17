@@ -17,6 +17,7 @@ services:
     volumes:
       - "odoodata:/opt/odoo/data"
       # mount volumes for dev needs
+      # - "./odoo/oca:/opt/odoo/oca"
       - "./odoo/extras:/opt/odoo/extras"
     # launch container in odoo dev mode
     # command: run --dev

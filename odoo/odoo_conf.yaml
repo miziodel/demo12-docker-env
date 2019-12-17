@@ -3,6 +3,8 @@
 addons_path:
     - /opt/odoo/extras
     - /opt/odoo/oca/project
+    - /opt/odoo/oca/web
+    - /opt/odoo/oca/account-budgeting
     - /opt/odoo/odoo/odoo/addons
 
 admin_passwd: admin

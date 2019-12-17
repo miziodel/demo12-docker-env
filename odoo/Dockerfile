@@ -13,7 +13,9 @@ ENV EXTRAS_PATH /opt/odoo/extras
 RUN mkdir -p $OCA_PATH $EXTRAS_PATH; \
 rm -rf $OCA_PATH/*; \
 rm -rf $EXTRAS_PATH/*; \ 
-git clone --depth=1 -b 12.0 https://github.com/OCA/project.git $OCA_PATH/project
+git clone --depth=1 -b 12.0 https://github.com/OCA/project.git $OCA_PATH/project; \
+git clone --depth=1 -b 12.0 https://github.com/OCA/web.git $OCA_PATH/web; \
+git clone --depth=1 -b 12.0 https://github.com/OCA/account-budgeting $OCA_PATH/account-budgeting;
 
 COPY odoo_conf.yaml odoo_conf.yaml
 RUN python3 scripts/generate_odoo_conf.py odoo.cfg.j2 odoo_conf.yaml > /opt/odoo/etc/odoo.cfg
