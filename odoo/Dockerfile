@@ -1,4 +1,4 @@
-FROM openforceit/odoo-docker-image:12.0
+FROM dubheit/odoo-docker-image:12.0
 
 USER root
 
