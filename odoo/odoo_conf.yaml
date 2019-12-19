@@ -5,6 +5,7 @@ addons_path:
     - /opt/odoo/oca/project
     - /opt/odoo/oca/web
     - /opt/odoo/oca/account-budgeting
+    - /opt/odoo/oca/business-requirement
     - /opt/odoo/odoo/odoo/addons
 
 admin_passwd: admin
@@ -14,3 +15,5 @@ limit_request: 8192
 limit_time_cpu: 6000
 limit_time_real: 12000
 proxy_mode: True
+dev_mode: all
+# see https://www.odoo.com/documentation/12.0/reference/cmdline.html
