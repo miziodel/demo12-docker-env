@@ -22,7 +22,7 @@
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/12.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Project',
+    'category': 'Project Management',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
@@ -32,12 +32,20 @@
                 'project_list',
                 'project_status',
                 'project_timeline',
+                'project_description',
+                'project_key',
+                'project_milestone',
+                'project_parent_task_filter',
+                'project_tag',
+                'project_timesheet_time_control',
                 ],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/views.xml',
+        'views/milestone_views.xml',
+        'views/project_views.xml',
+        'views/task_views.xml',
         'views/templates.xml',
     ],
     # only loaded in demonstration mode
